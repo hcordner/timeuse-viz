@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Use Survey Vizualization</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<h3>Time Use Survey Vizualization</h3>
+<span>Holly Cordner</span>
+<span>holly.cordner@gmail.com</span>
+<span>u0876675</span>
+<span>All data is presented in hours unless otherwise noted.</span>
+
+<br/>
+<hr/>
+<br/>
+
+<div>
+    <h2>2-week Totals</h2>
+    <svg id="chart"></svg>
+    <div class="info" id="totalInfo"></div>
+</div>
+<div>
+    <h2 id="dayH2">Activities by Day</h2>
+    <span>
+    <label>Day:</label>
+    <select id="daySelector" onchange="changeData()">
+        <option selected value="2/22/2017">Wednesday, 22 February 2017</option>
+        <option value="2/23/2017">Thursday, 23 February 2017</option>
+        <option value="2/24/2017">Friday, 24 February 2017</option>
+        <option value="2/25/2017">Saturday, 25 February 2017</option>
+        <option value="2/26/2017">Sunday, 26 February 2017</option>
+        <option value="2/27/2017">Monday, 27 February 2017</option>
+        <option value="2/28/2017">Tuesday, 28 February 2017</option>
+        <option value="3/1/2017">Wednesday, 1 March 2017</option>
+        <option value="3/2/2017">Thursday, 2 March 2017</option>
+        <option value="3/3/2017">Friday, 3 March 2017</option>
+        <option value="3/4/2017">Saturday, 4 March 2017</option>
+        <option value="3/5/2017">Sunday, 5 March 2017</option>
+        <option value="3/6/2017">Monday, 6 March 2017</option>
+        <option value="3/7/2017">Tuesday, 7 March 2017</option>
+        <option value="3/8/2017">Wednesday, 8 March 2017</option>
+    </select>
+    </span>
+    <br />
+    <svg id="dayChart"><g id="gridDay"></g><g id="barsDay" class="bars"></g><g id="xaxis"></g><g id="yaxis"></g></svg>
+    <div class="info" id="dayInfo"></div>
+</div>
+<div>
+    <h2>Time Spent on an "Average" Day</h2>
+    <svg id="avChart">
+        <div class="info" id="avInfo"></div>
+    </svg>
+</div>
+<div>
+    <h2 id="indH2">Individual Activities</h2>
+        <span>
+    <label>Activity:</label>
+    <select id="activitySelector" onchange="changeActData()">
+        <option value="arts">Arts</option>
+        <option value="chores">Chores</option>
+        <option value="church">Church</option>
+        <option value="class">Class</option>
+        <option value="dentist">Dentist</option>
+        <option value="eating">Eating</option>
+        <option value="fitness">Fitness</option>
+        <option value="foodprep">Food prep</option>
+        <option value="games">Games</option>
+        <option selected value="homework">Homework</option>
+        <option value="internet">Internet</option>
+        <option value="personalcare">Personal care</option>
+        <option value="reading">Reading</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="shopping">Shopping</option>
+        <option value="sleeping">Sleeping</option>
+        <option value="socializing">Socializing</option>
+        <option value="tv">TV</option>
+        <option value="telephone">Telephone</option>
+        <option value="travel">Travel</option>
+    </select>
+    </span>
+    <div class="info" id="indExplanation">Please not that these statistics for individual activities only take into account days and entries that actually have a value. In other words, days where I spent 0 hours doing something are not reflected.</div>
+    <div class="insp">Number of entries: <span class="actSpan" id="numEntries"></span></div><br />
+    <div class="insp">Shortest duration: <span class="actSpan" id="shortDur"></span></div>
+    <div class="insp">Longest duration: <span class="actSpan" id="longDur"></span></div><br />
+    <div class="insp">Variance in duration: <span class="actSpan" id="varDur"></span></div><br />
+    <div class="insp">Average start time: <span class="actSpan" id="avStartTime"></span></div>
+    <div class="insp">Average end time: <span class="actSpan" id="avEndTime"></span></div><br/>
+    <div class="insp">Earliest start time: <span class="actSpan" id="earlyStart"></span></div>
+    <div class="insp">Latest start time: <span class="actSpan" id="lateStart"></span></div><br/>
+    <div class="insp">Variance in start time: <span class="actSpan" id="varStart"></span></div><br/>
+    <div class="insp">Earliest end time: <span class="actSpan" id="earlyEnd"></span></div>
+    <div class="insp">Latest end time: <span class="actSpan" id="lateEnd"></span></div><br/>
+    <div class="insp">Variance in end time: <span class="actSpan" id="varEnd"></span></div><br/><br/>
+    <span id="key">Key to text colors:<br/><span class="exp">Small value in its category:&nbsp;</span><span id="smallest"></span><span class="exp">&nbsp;&nbsp;&nbsp;Middle value in its category:&nbsp;</span><span id="middle"></span><span class="exp">&nbsp;&nbsp;&nbsp;Large value in its category:&nbsp;</span><span id="largest"></span></span><br/>
+
+    <div class="info" id="actInfo"></div>
+</div>
+<div id="atusCharts"><h2>American Time Use Survey Averages for Full Time Students</h2>
+    <svg id="atusBar"><g id="atusGrid" class="grid"></g><g id="atusBars" class="bars"></g></svg>
+    <svg id="atusBarW"><g id="atusGridW" class="grid"></g><g id="atusBarsW" class="bars"></g></svg><br/>
+    <span id="key1">Key to text colors:<br/><span class="exp">Full time students--men:&nbsp;</span><span id="men"></span><span class="exp">&nbsp;&nbsp;&nbsp;Full time students--women:&nbsp;</span><span id="women"></span></span><br/>
+    <div class="info2" id="atusInfo">Looking at the data this way is interesting for several reasons. First, I was interested in the time each gender spent with grooming. As may be expected, women spend longer than men on average on this activity--about 20 minutes per day. I, however, spent an average of two hours per day on this activity over the course of two weeks. I do not dispute that I probably spend longer doing this than most people, but I also wonder at whether the survvey methodology would skew these results somewhat. Are people actively remembering how much time they spend on personal care? I think maybe not. This was one activity with one of the highest "entry numbers"--meaning that I started and stopped somewhat randomly and intermixed with other activities. For this reason, I think that people may not be remembering every time they brush their teeth, etc.<br/>
+    I also thought it was interesting looking at the educational data. Men spent slightly longer, on average, on homework than women and slightly more time in class. I spent longer per day on average on both of these activities than either of these two groups.</div></div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

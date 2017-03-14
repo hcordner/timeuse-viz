@@ -1,0 +1,2 @@
+projects,averageStartTime,averageEndTime,numEntries,longestDuration,shortestDuration,latestStartTime,earliestStartTime,latestEndTime,earliestEndTime,varianceDuration,varianceStartTime,varianceEndTime,info
+Reading,10:19,11:48,2,2:30:00,0:28:00,16:08,4:30,16:36,7:00,0.36%,11.75%,8.00%,"This category, for me, is--specifically--reading for pleasure when that's the main activity. I listen to a lot of audiobooks, which is not necessarily reflected in this data, because I'm usually doing something else at the same time as the ""main"" activity."

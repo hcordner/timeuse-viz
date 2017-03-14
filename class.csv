@@ -1,0 +1,2 @@
+projects,averageStartTime,averageEndTime,numEntries,longestDuration,shortestDuration,latestStartTime,earliestStartTime,latestEndTime,earliestEndTime,varianceDuration,varianceStartTime,varianceEndTime,info
+Class,16:02,17:22,7,2:10:00,0:37:00,16:45,14:15,18:52,15:25,0.04%,0.19%,0.31%,"This category has been separated out, specifically, from ""Homework."" It turns out that I spend comparatively little time in class as opposed to doing other educational activities."

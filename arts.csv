@@ -1,0 +1,2 @@
+projects,averageStartTime,averageEndTime,numEntries,longestDuration,shortestDuration,latestStartTime,earliestStartTime,latestEndTime,earliestEndTime,varianceDuration,varianceStartTime,varianceEndTime,info
+Arts,20:02,21:45,1,1:43:00,1:43:00,20:02,20:02,21:45,21:45,0.00%,0.00%,0.00%,The one entry represented here is a time when I went with a friend to a storytelling show.

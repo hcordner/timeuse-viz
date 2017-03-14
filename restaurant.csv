@@ -1,0 +1,2 @@
+projects,averageStartTime,averageEndTime,numEntries,longestDuration,shortestDuration,latestStartTime,earliestStartTime,latestEndTime,earliestEndTime,varianceDuration,varianceStartTime,varianceEndTime,info
+Restaurant,15:23,16:06,17,2:00:00,0:09:00,21:45,8:28,23:45,9:30,0.04%,3.02%,3.41%,"This cateogory is specifically for eating at restaurants vs. anywhere else. Included here is eating at table-service restaurants (with friends, etc.), which I suspect takes up the most time, as well as fast-food runs."

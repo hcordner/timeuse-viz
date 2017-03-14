@@ -1,0 +1,2 @@
+projects,averageStartTime,averageEndTime,numEntries,longestDuration,shortestDuration,latestStartTime,earliestStartTime,latestEndTime,earliestEndTime,varianceDuration,varianceStartTime,varianceEndTime,info
+Homework,12:52,11:29,20,6:22:00,0:01:00,22:25,0:42,23:42,0:00,0.41%,9.31%,11.72%,"Homework was one category where there was some marked variation. I try to have consistent times and places for homework, but it doesn't always work out that way. There's also considerable variance in the duration of time spent doing homework."

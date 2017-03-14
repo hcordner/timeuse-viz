@@ -1,0 +1,2 @@
+projects,averageStartTime,averageEndTime,numEntries,longestDuration,shortestDuration,latestStartTime,earliestStartTime,latestEndTime,earliestEndTime,varianceDuration,varianceStartTime,varianceEndTime,info
+Socializing,19:07,16:03,9,5:07:00,0:25:00,22:46,11:54,23:18,0:05,0.31%,2.29%,14.66%,"This category includes any time that I spent with friends where the main purpose of the activity was socializing (in other words, we weren't eating, watching TV, etc.)."

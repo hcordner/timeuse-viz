@@ -1,0 +1,2 @@
+projects,averageStartTime,averageEndTime,numEntries,longestDuration,shortestDuration,latestStartTime,earliestStartTime,latestEndTime,earliestEndTime,varianceDuration,varianceStartTime,varianceEndTime,info
+Telephone,17:42,17:58,2,0:17:00,0:15:00,19:45,15:40,20:00,15:57,0.00%,1.45%,1.42%,"This only includes telephone calls, not text messages or other ways of using a phone. The full picture may also not be represented here, again, though, because I am often engaged in other activities (driving, for one) when I call people."

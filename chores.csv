@@ -1,0 +1,2 @@
+projects,averageStartTime,averageEndTime,numEntries,longestDuration,shortestDuration,latestStartTime,earliestStartTime,latestEndTime,earliestEndTime,varianceDuration,varianceStartTime,varianceEndTime,info
+Chores,13:08,10:59,7,3:25:00,0:14:00,22:33,0:03,18:05,0:17,0.24%,8.87%,9.23%,"""Chores"" refers to indoor maintenance activities such as laundry, dishes, etc. I rent an apartment, so I do not have any outdoor maintenance tasks."

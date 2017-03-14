@@ -1,0 +1,141 @@
+/*Some styles adapted from Mike Bostock's website: http://bl.ocks.org*/
+
+body {
+    font: 10px sans-serif;
+}
+h1, h2, h3, h4 {
+    font-size: 3em;
+    font-family: serif;
+}
+.grid line {
+    stroke: lightgrey;
+    opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+.grid path {
+    stroke-width: 0;
+}
+.bars {
+    fill: gold;
+    stroke: darkgray;
+    stroke-width: 1px;
+}
+#atusBars {
+    fill: #151377;
+}
+#atusBarsW {
+    fill: #a4451c;
+}
+.lines {
+    stroke: gold;
+    fill: none;
+}
+.areas {
+    stroke: none;
+    fill: gold;
+}
+circle {
+    fill: gold;
+}
+.frame {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
+div {
+    display: inline-block;
+    border: 1px solid lightgray;
+    margin: 1em;
+}
+div, span {
+    padding: 1em;
+}
+h2 {
+    margin: 0;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+#dayH2, #indH2 {
+    display: inline;
+}
+.tip {
+    fill: white;
+}
+.info {
+    border: 0;
+    display: block;
+    width: 500px;
+}
+.info2 {
+    border: 0;
+    display: block;
+    width: 1000px;
+}
+.actSpan {
+    font-size: 2em;
+    padding: .5em;
+}
+.insp {
+    margin: .25em;
+}
+#smallest {
+    background-color: gold;
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+#middle {
+    background-color: coral;
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+#largest {
+    background-color: firebrick;
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+#men {
+    background-color: #151377;
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+#women {
+    background-color: #a4451c;
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.exp {
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+#key, #key1 {
+    padding:0;
+}
+#actInfo {
+    padding-top: 0;
+}
